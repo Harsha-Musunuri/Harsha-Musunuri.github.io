@@ -131,7 +131,7 @@ hr {
     content: "["counter(list, decimal) "] ";
     counter-increment: list;
     position: absolute;
-    left: -30px
+    left: -40px
 }
 
 .content blockquote {
