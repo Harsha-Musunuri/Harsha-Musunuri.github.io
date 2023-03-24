@@ -208,3 +208,74 @@ table tr th :last-child,
 table tr td :last-child {
     margin: 0
 }
+
+
+/* button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: black;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  button:active {
+    transform: translateY(2px);
+  } */
+
+  .toggle-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    margin-right: 10px; /* Add right margin for gap */
+    border-radius: 20px; /* Add border radius for curvy edges */
+  }
+  
+  .toggle-button:last-child {
+    margin-right: 0; /* Remove right margin from last button */
+  }
+/* 
+.toggle-container {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  .toggle-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .toggle-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .toggle-container ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .toggle-container li {
+    margin-bottom: 10px;
+  } */
+            
