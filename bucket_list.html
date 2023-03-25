@@ -2,56 +2,27 @@
 <html lang="en">
 
 <head>
-  <title>Bucket List</title>
-  <meta name="author" content="Harsha Musunuri" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="styles.css" />
+  <title>Must Do</title>
+  <meta name="author" content="Harsha Musunuri">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="images/x-icon" href="data/Title.png" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#navbar').load('navbar.html');
+    });
+    </script> 
+
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="navbar container">
-      <a id="author-name" class="alignable pull-left" href="https://harshamusunuri.com/">Harsha Musunuri</a>
-      <p id="social-handles" class="alignable pull-right">
-        <a href="mailto:harsha.musunuri@rutgers.edu" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"
-          style="font-size: 16px"></i></a>
-      &nbsp/&nbsp
-        <a href="https://twitter.com/harsha_musunuri" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"
-            style="font-size: 16px"></i></a>
-        &nbsp/&nbsp
-        <a href="https://www.linkedin.com/in/harsha-musunuri/" target="_blank" rel="noopener noreferrer"><i
-            class="fa fa-linkedin" style="font-size: 16px"></i></a>
-        &nbsp/&nbsp
-        <a href="https://github.com/Harsha-Musunuri/" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"
-            style="font-size: 16px"></i></a>
-      </p>
-      <br /><br />
-      <p id="STUFF" class="alignable pull-left">
-        <a href="index.html" target="_blank" rel="noopener noreferrer">Home</a> &nbsp/&nbsp
-        <a href="bio.html" target="_blank" rel="noopener noreferrer">Bio</a> &nbsp/&nbsp
-        <a href="bucket_list.html" target="_blank" rel="noopener noreferrer">Bucket List</a>
-        &nbsp/&nbsp
-        <a href="travel.html" target="_blank" rel="noopener noreferrer">Travel</a>
-        &nbsp/&nbsp
-        <a href="music.html" target="_blank" rel="noopener noreferrer">Music</a>
-        &nbsp/&nbsp
-        <a href="dance.html" target="_blank" rel="noopener noreferrer">Dance</a>
-        &nbsp/&nbsp
-        <a href="dad.html" target="_blank" rel="noopener noreferrer">Dad</a>
-        &nbsp/&nbsp
-        <a href="agi.html" target="_blank" rel="noopener noreferrer">AGI</a>
-        &nbsp/&nbsp
-        <a href="life.html" target="_blank" rel="noopener noreferrer">Life</a>
-        &nbsp/&nbsp
-        <a href="fitness.html" target="_blank" rel="noopener noreferrer">Fitness</a>
-        &nbsp/&nbsp
-        <a href="chinese.html" target="_blank" rel="noopener noreferrer">Chinese</a>
-      </p>
-    </div>
-    <div style="clear: both"></div>
-    <hr />
+    <!-- below is to load the navbar in all html files -->
+    <div id ='navbar' class="navbar"></div>
+    <div style="clear:both"></div>
+    <hr>
 
     <div class="container content">
 

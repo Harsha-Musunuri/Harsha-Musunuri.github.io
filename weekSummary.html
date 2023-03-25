@@ -8,6 +8,139 @@
   <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="images/x-icon" href="data/Title.png" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(function() {
+      $('#navbar').load('navbar.html');
+    });
+    </script> 
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- below is to load the navbar in all html files -->
+    <div id ='navbar' class="navbar"></div>
+    <div style="clear:both"></div>
+    <hr>
+
+    <div class="container content">
+        <div>
+            <button class="toggle-button" onclick="toggleHeader('week1')">March 4 to 11, 2023</button>
+            <h2 id="week1" style="display: none;">Week of March 4-11, 2023</h2>
+            <ul id="week1_list" style="display: none;">
+                <li>
+                    <strong>BucketList:</strong>
+                    Reading this amazing book by <a href= target="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 58 of 519.
+                  </li>
+                  <li>
+                    <strong>Travel:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>Music:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>Dance:</strong>
+                    Day 6 of 10 <a href="https://app.steezy.co/programs/intro-to-dance-2" target="_blank" rel="noopener noreferrer">Intro to Dance from Steezy</a>
+                  </li>
+                  <li>
+                    <strong>Dad:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>AGI:</strong>
+                    Learning how GPT works from the Legend - <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a> .
+                  </li>
+                  <li>
+                    <strong>Life:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>Fitness:</strong>
+                    Learnt the first form (Poomse) in Taekwando.
+                  </li>
+                  <li>
+                    <strong>Chinese:</strong>
+                    None.
+                  </li>
+            </ul>
+          </div>
+          <br>
+          <div>
+            <button class="toggle-button" onclick="toggleHeader('week2')">March 12 to 19, 2023</button>
+            <h2 id="week2" style="display: none;">Week of March 12-19, 2023</h2>
+            <ul id="week2_list" style="display: none;">
+                <li>
+                    <strong>BucketList:</strong>
+                    Reading this amazing book by <a href= target="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 113 of 519.
+                  </li>
+                  <li>
+                    <strong>Travel:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>Music:</strong>
+                    Day 8 of ∞ Learning John Mayer's "Neon" from a sick video on YouTube! <a href= target="https://www.youtube.com/watch?v=fiRNnUSrw4c" target="_blank" rel="noopener noreferrer">This is so dope!</a>.
+                  </li>
+                  <li>
+                    <strong>Dance:</strong>
+                    Day 10 of 10 <a href="https://app.steezy.co/programs/intro-to-dance-2" target="_blank" rel="noopener noreferrer">Intro to Dance from Steezy</a>
+                  </li>
+                  <li>
+                    <strong>Dad:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>AGI:</strong>
+                    Learning how GPT works from the Legend - <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a> .
+                  </li>
+                  <li>
+                    <strong>Life:</strong>
+                    None.
+                  </li>
+                  <li>
+                    <strong>Fitness:</strong>
+                    More kicks and blocks. Also, I just tried climbing that V2 boulder and I think I could totally crush about 75% of it! It was tough, but I'm feeling pretty stoked about it!
+                  </li>
+                  <li>
+                    <strong>Chinese:</strong>
+                    Day 8 of ∞ - Duolingo Bruh!
+                  </li>
+            </ul>
+          </div>
+
+       
+          
+      <div style="
+            position: fixed;
+            bottom: 0;
+            text-align: center;
+            width: relative;
+            padding: 20px 0;
+          ">
+        <em>"I am always doing that which I can not do, in order that I may
+          learn how to do it" <br />- Pablo Picaso</em>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Week Summary</title>
+  <meta name="author" content="Harsha Musunuri">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="icon" type="images/x-icon" href="data/Title.png" />
 
 
 </head>
@@ -56,7 +189,7 @@
     <hr>
 
     <div class="container content">
-        <h2 id="weekly_stuff">Week of March 4-11, 2023</h2>
+        <!-- <h2 id="weekly_stuff">Week of March 4-11, 2023</h2>
 
         
         <ul>
@@ -64,85 +197,29 @@
             <strong>BucketList:</strong>
             Reading this amazing book by <a href= target="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 58 of 519.
           </li>
-          <li>
-            <strong>Travel:</strong>
-            None.
-          </li>
-          <li>
-            <strong>Music:</strong>
-            None.
-          </li>
-          <li>
-            <strong>Dance:</strong>
-            Day 6 of 10 <a href="https://app.steezy.co/programs/intro-to-dance-2" target="_blank" rel="noopener noreferrer">Intro to Dance from Steezy</a>
-          </li>
-          <li>
-            <strong>Dad:</strong>
-            None.
-          </li>
-          <li>
-            <strong>AGI:</strong>
-            Learning how GPT works from the Legend - <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a> .
-          </li>
-          <li>
-            <strong>Life:</strong>
-            None.
-          </li>
-          <li>
-            <strong>Fitness:</strong>
-            Learnt the first form (Poomse) in Taekwando.
-          </li>
-          <li>
-            <strong>Chinese:</strong>
-            None.
-          </li>
+        </ul> -->
+        <div>
+            <button class="toggle-button" onclick="toggleHeader('week1')">March 4 to 11, 2023</button>
+            <h2 id="week1" style="display: none;">Week of March 4-11, 2023</h2>
+            <ul id="week1_list" style="display: none;">
+              <li>
+                <strong>BucketList:</strong>
+                Reading this amazing book by <a href="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 58 of 519.
+              </li>
+            </ul>
+          </div>
           <br>
-        </ul>
-        
-        <ul>
-
-    <h2 id="weekly_stuff">Week of March 12-19, 2023</h2>
-
-    
-    <ul>
-      <li>
-        <strong>BucketList:</strong>
-        Reading this amazing book by <a href= target="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 113 of 519.
-      </li>
-      <li>
-        <strong>Travel:</strong>
-        None.
-      </li>
-      <li>
-        <strong>Music:</strong>
-        Day 8 of ∞ Learning John Mayer's "Neon" from a sick video on YouTube! <a href= target="https://www.youtube.com/watch?v=fiRNnUSrw4c" target="_blank" rel="noopener noreferrer">This is so dope!</a>.
-      </li>
-      <li>
-        <strong>Dance:</strong>
-        Day 10 of 10 <a href="https://app.steezy.co/programs/intro-to-dance-2" target="_blank" rel="noopener noreferrer">Intro to Dance from Steezy</a>
-      </li>
-      <li>
-        <strong>Dad:</strong>
-        None.
-      </li>
-      <li>
-        <strong>AGI:</strong>
-        Learning how GPT works from the Legend - <a href="https://www.youtube.com/watch?v=kCc8FmEb1nY" target="_blank" rel="noopener noreferrer">Andrej Karpathy</a> .
-      </li>
-      <li>
-        <strong>Life:</strong>
-        None.
-      </li>
-      <li>
-        <strong>Fitness:</strong>
-        More kicks and blocks. Also, I just tried climbing that V2 boulder and I think I could totally crush about 75% of it! It was tough, but I'm feeling pretty stoked about it!
-      </li>
-      <li>
-        <strong>Chinese:</strong>
-        Day 8 of ∞ - Duolingo Bruh!
-      </li>
-      </ul>
-      
+          <div>
+            <button class="toggle-button" onclick="toggleHeader('week2')">March 12 to 19, 2023</button>
+            <h2 id="week2" style="display: none;">Week of March 12-19, 2023</h2>
+            <ul id="week2_list" style="display: none;">
+              <li>
+                <strong>BucketList:</strong>
+                Reading this amazing book by <a href="https://www.goodreads.com/book/show/41721428-can-t-hurt-me" target="_blank" rel="noopener noreferrer">David Goggins</a> at Page 58 of 519.
+              </li>
+            </ul>
+          </div>
+          
           
       <div style="
             position: fixed;
