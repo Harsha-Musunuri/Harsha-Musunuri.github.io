@@ -11,9 +11,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(function() {
-      $('#navbar').load('navbar.html');
+      var url = 'navbar.html?' + new Date().getTime();
+      $('#navbar').load(url);
     });
-    </script> 
+    </script>
 
 </head>
 
