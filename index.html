@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thinking</title>
+  <link rel="icon" type="image/png" href="data/thinking.png"> <!-- Add this line -->
+  <style>
+    body {
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .text-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      white-space: nowrap; /* Ensure no wrapping or extra spaces */
+    }
+  </style>
+</head>
+<body>
+  <div class="text-container">
+    <span id="thinkingText">Thinking</span><span id="dots"></span>
+  </div>
+
+  <script>
+    let dotsContainer = document.getElementById('dots');
+    let numberOfDots = 0;
+
+    setInterval(() => {
+      if (numberOfDots < 3) {
+        numberOfDots++;
+      } else {
+        numberOfDots = 0;
+      }
+      dotsContainer.textContent = '.'.repeat(numberOfDots);
+    }, 1000);
+  </script>
+</body>
+</html>
