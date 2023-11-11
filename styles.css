@@ -67,7 +67,8 @@ body {
   
   .intro-container {
     display: flex;
-    align-items: flex-start; /* Align the items to the top */
+    align-items: flex-start;
+    overflow: hidden; /* Align the items to the top */
   }
   
   .profile-image {
