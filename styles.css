@@ -1,18 +1,25 @@
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #ff6b6b;
+  --secondary-bg: #1e1e1e;
+  --secondary-text: #b3b3b3;
+}
+
 body {
   font-family: 'Fira Code', monospace;
   margin: 0;
   padding: 0;
-  background-color: #333;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 /* Nav-Bar */
 .navbar {
   width: 100%;
-  background-color: #f8f8f8;
+  background-color: var(--secondary-bg);
   overflow: auto;
   text-align: center;
-  /* Center the navigation links */
 }
 
 .nav-container {
@@ -22,95 +29,115 @@ body {
 
 .navbar a {
   display: inline-block;
-  /* Change from float to inline-block */
   padding: 12px;
-  color: #333;
+  color: var(--text-color);
   text-decoration: none;
   transition: all 0.3s;
 }
 
-/* Remove the background color on hover */
 .navbar a:hover {
   background-color: transparent;
-  color: #555;
-  /* Optional: change color on hover */
+  color: var(--accent-color);
 }
 
 .nav-separator {
   display: inline-block;
   margin: 0 10px;
-  /* Adjust spacing around the separator as needed */
-  color: #333;
-  /* Color of the separator */
+  color: var(--secondary-text);
 }
 
 .icon-link {
   display: inline-block;
   vertical-align: middle;
-  /* Aligns the icon vertically with adjacent text */
   padding: 12px;
-  /* Padding to increase clickable area */
 }
 
 .icon-link svg {
-  fill: #333;
-  /* Color of the icon */
+  fill: var(--text-color);
   transition: fill 0.3s;
-  /* Transition for hover effect */
 }
 
 .icon-link:hover svg {
-  fill: #555;
-  /* Color of the icon on hover */
+  fill: var(--accent-color);
   stroke-width: 1;
-  /* Adjust the stroke width on hover to make it look bolder */
 }
 
 /* Body */
 .content {
   max-width: 800px;
-  /* Maximum width of the content */
   width: 80%;
-  /* Adjust the width as a percentage of the viewport width */
   margin: 20px auto;
-  /* Top and bottom margin 20px, left and right auto */
   padding: 20px;
-  /* Padding inside the content area */
 }
-
-
 
 .intro-container {
   display: flex;
   align-items: flex-start;
   overflow: hidden;
-  /* Align the items to the top */
 }
 
 .profile-image {
   width: 150px;
-  /* Adjust the width as needed */
   height: 150px;
-  /* Adjust the height as needed */
   object-fit: cover;
-  /* Ensures the image covers the area without distortion */
   margin-right: 20px;
-  /* Adds some space between the image and the text */
+  border-radius: 10px;
 }
-
-
 
 .intro-text .intro-greeting {
   margin-top: 0;
-  /* Removes top margin to align with the top of the image */
+  color: var(--accent-color);
 }
-
 
 @media screen and (max-width: 700px) {
   .navbar a {
     padding: 8px;
-    /* Smaller padding */
     font-size: 0.8em;
-    /* Smaller font size */
   }
+}
+
+.image-gallery-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+.image-gallery {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.image-gallery-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.image-gallery img {
+  height: 200px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+/* Additional styles to match the image */
+h1,
+h2,
+h3 {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.accent-text {
+  color: var(--accent-color);
 }

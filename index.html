@@ -1,79 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D93ZNK3GX2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'G-D93ZNK3GX2');
-    </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Normality</title>
-    <link rel="icon" href="normal.ico" type="normal-dist">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Link to your external CSS file -->
-  </head>
-  <body>
-    <div class="navbar">
-      <div class="nav-container">
-        <a href="index.html" >Home</a>
-        <a href="research.html" >Research & Publications</a>
-        <a href="#blog">Blog</a>
-        <span class="nav-separator">|</span>
-        <!-- Link to your X account with an icon -->
-        <a
-          href="https://x.com/harsha_musunuri"
-          class="icon-link"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="X account"
-        >
-          <svg
-            role="img"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            width="15"
-            height="15"
-          >
-            <title>X account</title>
-            <path
-              d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
-              fill="#333"
-              stroke="#333"
-              stroke-width="1"
-            />
-          </svg>
-        </a>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D93ZNK3GX2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D93ZNK3GX2');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>agi_catalyst</title>
+  <link rel="icon" href="agi.svg" type="normal-dist">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Link to your external CSS file -->
+</head>
+
+<body>
+
+  <div class="navbar">
+    <div class="nav-container">
+      <a href="index.html">home</a>
+      <a href="research.html">r & d</a>
+      <a href="1dd1.html">one day?</a>
+      <a href="#blog">blog</a>
+      <span class="nav-separator">|</span>
+      <!-- Link to your X account with an icon -->
+      <a href="https://x.com/harsha_musunuri" class="icon-link" target="_blank" rel="noopener noreferrer"
+        aria-label="X account">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="9" height="9">
+          <title>X account</title>
+          <path
+            d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"
+            class="logo-path" />
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1>
+      aren't we all embeddings in cosmos?
+    </h1>
+    <div class="intro-container">
+      <img src="alchemist.jpg" alt="alchemist" class="profile-image" />
+      <div class="intro-text">
+        <p class="intro-greeting">hey fellow embedding! <strong>harsha</strong> here.</p>
+        <p>
+          agi e/acc for everything art & creation.
+        </p>
+        <p>
+          i research on generative video models at <a href="https://www.dolby.com" target="_blank"
+            rel="noopener noreferrer">dolby labs</a>.
+        </p>
       </div>
     </div>
-
-    <div class="content">
-      <h1>
-        Fascinating: the universe's data, so vast and varied, invariably echoes a Gaussian distribution.
-      </h1>
-      <div class="intro-container">
-        <img src="normal.webp" alt="gaussian" class="profile-image" />
-        <div class="intro-text">
-          <p class="intro-greeting">Hi, I'm <strong>Harsha</strong>.</p>
-          <p>
-            The revelation that Gaussian space is the theme of so many
-            generative AI algorithms, like VAEs, has been research motive from the start.
-          </p>
-          <p>
-            My role at Dolby Labs demands a deep dive into this area, leveraging
-            its potential to solve complex problems in video processing.
-          </p>
-        </div>
+    <div class="image-gallery-container">
+      <div id="imageGallery" class="image-gallery">
+        <!-- Images will be dynamically added here -->
       </div>
-      <!-- More content -->
-    </div>
-  </body>
+    </div><!-- More content -->
+  </div>
+  <script src="gallery.js"></script>
+</body>
+
 </html>
