@@ -67,10 +67,48 @@
   </div>
   <script src="gallery.js"></script>
 
+  <div class="audio-player">
+    <div class="audio-container">
+      <button id="audioButton" class="audio-button" aria-label="Play audio">
+        <svg class="play-icon" viewBox="0 0 24 24" width="24" height="24">
+          <path fill="currentColor" d="M8 5v14l11-7z" />
+        </svg>
+        <svg class="pause-icon" viewBox="0 0 24 24" width="24" height="24" style="display:none;">
+          <path fill="currentColor" d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" />
+        </svg>
+      </button>
+      <div class="audio-label">page theme</div>
+    </div>
+    <audio id="audioPlayer" src="song.m4a" loop></audio>
+  </div>
 
+  <script src="gallery.js"></script>
+  <script>
+    const audioButton = document.getElementById('audioButton');
+    const audioPlayer = document.getElementById('audioPlayer');
+    const playIcon = audioButton.querySelector('.play-icon');
+    const pauseIcon = audioButton.querySelector('.pause-icon');
 
+    audioButton.addEventListener('click', function () {
+      if (audioPlayer.paused) {
+        audioPlayer.play();
+        playIcon.style.display = 'none';
+        pauseIcon.style.display = 'block';
+        audioButton.classList.add('playing');
+      } else {
+        audioPlayer.pause();
+        playIcon.style.display = 'block';
+        pauseIcon.style.display = 'none';
+        audioButton.classList.remove('playing');
+      }
+    });
 
-
+    audioPlayer.addEventListener('ended', function () {
+      playIcon.style.display = 'block';
+      pauseIcon.style.display = 'none';
+      audioButton.classList.remove('playing');
+    });
+  </script>
 </body>
 
 </html>
